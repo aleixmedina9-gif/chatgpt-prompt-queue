@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "ChatGPT Prompt Queue",
   "version": "2.3.2",
-  "description": "ChatGPT Prompt Queue con nombres y carpeta de descarga forzados desde chrome.downloads.onDeterminingFilename.",
+  "description": "Automate prompt queues and image downloads directly inside ChatGPT. No API key or external subscription required.",
   "permissions": [
     "storage",
     "downloads",
