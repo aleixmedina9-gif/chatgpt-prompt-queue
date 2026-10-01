@@ -1,6 +1,6 @@
 # ChatGPT Prompt Queue
 
-**ChatGPT Prompt Queue** is a free Chrome/Chromium extension built specifically for **ChatGPT Web**. It automates repetitive prompt queues and image-generation workflows directly inside \`chatgpt.com\`.
+**ChatGPT Prompt Queue** is a free Chrome/Chromium extension built specifically for **ChatGPT Web**. It automates repetitive prompt queues and image-generation workflows directly inside `chatgpt.com`.
 
 Instead of manually copying a prompt, sending it, waiting for ChatGPT to finish, downloading the generated image, renaming it, and repeating the process hundreds of times, you can import a list of prompts and let the extension process them sequentially.
 
@@ -37,11 +37,20 @@ Import prompts
 
 Everything happens directly on the ChatGPT website.
 
+
+## Screenshots
+
+| Prompt queue | Configuration |
+| --- | --- |
+| <img src="screenshots/queue.webp" width="280" alt="ChatGPT Prompt Queue main queue interface"> | <img src="screenshots/settings.webp" width="280" alt="ChatGPT Prompt Queue configuration interface"> |
+
+The queue view shows prompt importing, progress, pause/resume controls, retries, pending exports and per-prompt status. The configuration view lets you adjust prompt prefix/suffix, generation preferences, timing, retries, download folder and checkpoint behavior.
+
 ## Main features
 
 ### Automatic prompt queue
 
-Add prompts manually or import a large list from a \`.txt\` file.
+Add prompts manually or import a large list from a `.txt` file.
 
 The extension processes prompts one by one without requiring you to manually paste and send every item.
 
@@ -84,7 +93,7 @@ Coca-Cola Zero Bottle PET 2L Front View (1).png
 
 ### Forced download folder
 
-Version 2.3 improved download naming and folder handling using \`chrome.downloads.onDeterminingFilename\`.
+Version 2.3 improved download naming and folder handling using `chrome.downloads.onDeterminingFilename`.
 
 The default destination is:
 
@@ -226,17 +235,17 @@ ChatGPT Prompt Queue is currently installed as an **unpacked Chrome extension**.
 1. Download or clone this repository.
 2. Extract it if you downloaded a ZIP.
 3. Open Chrome.
-4. Go to \`chrome://extensions\`.
+4. Go to `chrome://extensions`.
 5. Enable **Developer mode**.
 6. Click **Load unpacked**.
-7. Select the folder containing \`manifest.json\`.
-8. Open or refresh \`https://chatgpt.com/\`.
+7. Select the folder containing `manifest.json`.
+8. Open or refresh `https://chatgpt.com/`.
 
 The ChatGPT Prompt Queue interface should appear inside ChatGPT.
 
 ### Microsoft Edge
 
-1. Open \`edge://extensions\`.
+1. Open `edge://extensions`.
 2. Enable **Developer mode**.
 3. Choose **Load unpacked**.
 4. Select the extension folder.
@@ -248,7 +257,7 @@ Other Chromium-based browsers may also work if they support Manifest V3 extensio
 
 - Google Chrome, Microsoft Edge, or another compatible Chromium browser
 - A working ChatGPT account
-- Access to \`chatgpt.com\`
+- Access to `chatgpt.com`
 - The extension loaded in the browser
 
 **No OpenAI API key is required.**
@@ -270,7 +279,7 @@ https://www.chatgpt.com/*
 
 The extension does not require an external prompt-queue server.
 
-Queue data and configuration are stored locally in the browser using \`chrome.storage.local\`.
+Queue data and configuration are stored locally in the browser using `chrome.storage.local`.
 
 Prompts are submitted through the ChatGPT page you already have open.
 
@@ -278,10 +287,10 @@ Prompts are submitted through the ChatGPT page you already have open.
 
 Version 2.3.2 uses Chrome extension permissions including:
 
-- \`storage\`
-- \`downloads\`
-- \`tabs\`
-- \`scripting\`
+- `storage`
+- `downloads`
+- `tabs`
+- `scripting`
 
 These are used for queue persistence, automatic downloads, interaction with the ChatGPT tab, and extension functionality.
 
@@ -304,14 +313,14 @@ ChatGPT Prompt Queue is useful for workflows such as:
 
 - Improved forced filenames and download-folder handling.
 - Registers the desired filename before creating the download.
-- Uses \`chrome.downloads.onDeterminingFilename\` to apply the configured destination.
+- Uses `chrome.downloads.onDeterminingFilename` to apply the configured destination.
 - Keeps the original prompt as the downloaded filename.
 
 ### v2.2
 
 - Introduced direct image downloading.
 - Removed dependency on clicking ChatGPT share/download controls.
-- Downloads generated image resources through \`chrome.downloads.download\`.
+- Downloads generated image resources through `chrome.downloads.download`.
 
 ### v2.1
 
